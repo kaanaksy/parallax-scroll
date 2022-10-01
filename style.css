@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:linear-gradient(#ffad00, #b7521b);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+header .logo {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 5px 12px;
+  color: white;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: white;
+  color: #ffad00;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #b7521b, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section img#floor {
+  width: 100%;
+  height: 100vh;
+}
+
+section img#boat {
+  width: 20%;
+  height: 10%;
+  margin-top: 20%;
+  margin-left: 50%;
+}
+
+section img#flyingbirds {
+  max-width: 40%;
+  max-height: 40%;
+  margin-left: 40%;
+}
+
+.sec {
+  position: relative;
+  padding: 30px 100px;
+  background:#b7521b;
+}
+
+.sec h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.sec p {
+  font-size: 1rem;
+  color: white;
+}
